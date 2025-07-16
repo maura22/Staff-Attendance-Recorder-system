@@ -1,0 +1,21 @@
+primary Colors
+black
+primary blue
+white
+
+
+background #F5F5F5 light gray
+tables background #FFFFFF pure
+
+Tex(primary) #212121
+secondary Tex #757575
+lables primary blue #2196F3
+selected taps light blue underline 
+
+buttons(general) primary blue
+delet and edite buttons on primary state bordered black
+delet buttons on focoursed red borders
+edite buttons on focoursed light blue borders
+
+
+
