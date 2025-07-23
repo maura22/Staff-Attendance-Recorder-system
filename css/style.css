@@ -1,0 +1,57 @@
+.container-fluit{
+    background-image: url(../resource/image/image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+}
+.sidebar{
+height: 100%;
+width: 23%;
+background-color:white;
+display: flex;
+flex-direction: column;
+align-items: center;
+position: fixed;
+
+}
+.navbar{
+  background-color: white;
+  box-shadow: 5px;
+}
+.sidebar li{
+    margin-top:30px;
+  list-style: none;
+  padding: 8px;
+ 
+}
+.sidebar li a{
+    text-decoration: none;
+    color: black;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.sidebar a:hover {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+ color: white;
+ 
+}
+.sidebar li:hover{
+    background-color:  rgb(16, 65, 228);
+   
+   
+}
+.card{
+   
+    max-width: 500px;
+   align-items: center;
+    margin-top: 10%;
+    margin-left: 40%;   
+}
+.card-top{
+    background-color: blue;
+    width: 100%;
+}
+.examol{
+    margin-top:auto;
+}
