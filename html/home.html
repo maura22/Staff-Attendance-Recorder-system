@@ -20,7 +20,11 @@
                   </li>
                 </ul> 
                 <ul class="navbar-nav">
-
+               <div class="clock">
+                  <h1 ><span id="h"></span></h1>
+                  <h1>:<span  id="m"></span></h1>
+                  <h1>:<span id="s"></span></h1>
+              </div>
                 </ul> 
             
         </div>
@@ -80,12 +84,30 @@
      </div>
   
     <div class="footer">
-      <span>&copy;Work force management system</span>
+      
+      <span><marquee behavior="" direction="">workforce management system</marquee>&copy;Work force management system</span>
     </div>
       
 </div>
 
 
-<script href="../javasript/bootstrap.min.js"></script>
+<!--<script href="../javasript/bootstrap.min.js"></script>-->
+<script>
+ let hrs=document.getElementById("h")
+ let min=document.getElementById("m") 
+ let sec=document.getElementById("s")
+ setInterval(() => {
+  let currentTime = new Date();
+  hrs.innerHTML=(currentTime.getHours() <10 ? "0" : "")+
+  currentTime.getHours()
+
+  min.innerHTML=(currentTime.getMinutes() <10 ? "0" : "")+
+  currentTime.getMinutes()
+
+  sec.innerHTML=(currentTime.getSeconds() <10 ? "0" : "")+
+  currentTime.getSeconds()
+
+ },1000);
+</script>
 </body>
 </html>
