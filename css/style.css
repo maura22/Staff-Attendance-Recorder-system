@@ -6,7 +6,7 @@ body{
    
 
 }
-.sidebar{
+.side{
 height: 100%;
 width: 20%;
 background-color:white;
@@ -18,10 +18,9 @@ position: fixed;
 }
 .navbar{
   background-color: white;
-  box-shadow: 5px;
-  position: relative;
+
 }
-.sidebar li{
+.side li{
     margin-top:30px;
   list-style: none;
   padding: 8px;
@@ -31,17 +30,16 @@ position: fixed;
 border-radius: 5px;
  
 }
-.sidebar li a{
+.side li a{
     text-decoration: none;
     color: black;  
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
 
 }
 
-.sidebar li:hover{
+.side li:hover{
     background-color: blue;
-   color:white;
-   
+   cursor: pointer;
 }
 .card{
    
@@ -58,15 +56,16 @@ border-radius: 5px;
      text-align: center;
     font-size: 40px;
 }
-.examol{
-    margin-top:auto;
-}
+
 .footer{
  text-align: center;
- margin-top: 189px;
+ height: 25px;
+ margin-top: 89px;
  font-size: 0.9m;
  color:black;
  background-color: white;
- box-shadow: 5px;
-
+ box-shadow: 5px 5px 5px 5px;
+}
+.footer span{
+margin-top: 5px;
 }
