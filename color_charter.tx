@@ -14,8 +14,8 @@ lables primary blue #2196F3
 selected taps light blue underline 
 
 buttons(general) primary blue
-delet and edite buttons on primary state bordered black
-delet buttons on focoursed red borders
+delete and edit buttons on primary state bordered black
+delete buttons on focoursed red borders
 edite buttons on focoursed light blue borders
 
 
