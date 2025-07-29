@@ -20,7 +20,7 @@ A simple and lightweight web-based Staff Attendance System built using HTML,CSS,
 
 - HTML5 – Structure of the application  
 - CSS and boostrap – Styling and layout  
-- JavaScript – alarts  
+- JavaScript – interaction 
 
 
 
