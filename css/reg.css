@@ -1,0 +1,36 @@
+body{
+    background-color:cream white;
+}
+.cont{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 600px;
+   margin-left: 30%;
+   margin-top: 50px;
+   padding: 15px;
+}
+.container h1{
+   text-align: center;
+   margin-bottom: 10px;
+}
+.container div{
+    margin-top: 5px;
+
+}
+.container div label{
+    color: blue;
+}
+#female{
+    margin-left: 10px;
+}
+#ct{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   
+   
+}
+.btn{
+     margin-top: 10px;
+}
+
