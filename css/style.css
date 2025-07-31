@@ -6,8 +6,8 @@ margin: 0px;
 padding: 0px;
 }
 .side{
-margin-top: 25px;
-height: calc(100vh-56px);
+margin-top:10px;
+height:95vh;
 padding-bottom: 60px;
 width: 20%;
 background-color:white;
@@ -16,9 +16,10 @@ flex-direction: column;
 align-items: center;
 position: fixed;
 top:56px;
+padding-top: 45px;
 
 }
-.container-ms{
+.container{
   overflow-y: auto;
   top: 0;
   bottom: 0;
@@ -29,7 +30,7 @@ top:56px;
 
 }
 .side li{ 
-    margin-top:50px;
+    margin-top:30px;
   list-style: none;
   padding: 8px;
   padding-top: 15px;
