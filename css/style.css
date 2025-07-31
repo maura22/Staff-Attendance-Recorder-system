@@ -1,42 +1,44 @@
-body{
-    background-image: url('../resource/image/IMG-20250730-WA0014.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 
+
+body{
+  background-color: black;
+margin: 0px;
+padding: 0px;
 }
 .side{
-height: 100%;
+margin-top: 25px;
+height: calc(100vh-56px);
+padding-bottom: 60px;
 width: 20%;
-background-color:black;
+background-color:white;
 display: flex;
 flex-direction: column;
 align-items: center;
 position: fixed;
+top:56px;
 
+}
+.container-ms{
+  overflow-y: auto;
+  top: 0;
+  bottom: 0;
+  
 }
 .navbar{
   background-color: white;
 
 }
 .side li{ 
-    margin-top:30px;
+    margin-top:50px;
   list-style: none;
   padding: 8px;
   padding-top: 15px;
   padding-bottom: 15px;
- 
+ border: 2px solid black;
 border-radius: 5px;
 
  
-}
-.side li a{
-    text-decoration: none;
-   color:white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
-    padding: 8px;
-    padding-left: 10p;
-}
+ }
 
 .side li:hover{
    border: 2px solid white;
@@ -44,22 +46,27 @@ border-radius: 5px;
    background-color: blue;
    color: white;
 }
+#main_display{
+  margin-top: 450px;
+  height: calc(100vh-96px);
 
+}
 
 .footer{
  text-align: center;
- height: 25px;
- margin-top: 800px;
+ height: 40px;
  font-size: 0.9m;
  color:black;
  background-color: white;
+ position: fixed;
+ bottom: 10px;;
+ width: 100%;
+ 
 }
 .footer marquee{
     box-shadow: 0px 0px 0px 0px;
 }
-.footer span{
-margin-top: 5px;
-}
+
 .clock{
     display: flex;
      flex-direction:row ;
@@ -67,3 +74,5 @@ margin-top: 5px;
 .clock h1{
  margin: 5px;
 }
+
+ 
