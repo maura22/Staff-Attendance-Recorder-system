@@ -3,19 +3,19 @@ background-color: transparent;
     margin: 0;
     padding: 0;
 }
-.cont{
-    
-   
-   height: 20px;
-   margin-left: 35%;
+body form{
+
+   margin-left:38%;
    margin-top: -5%;
-   
+   height: 400px;
 }
 .containe{
-    padding: 15px;
-    width: 600px;
-    border: 2px solid black;
-    border-radius: 5px;
+    padding: 18px;
+    width: 550px;
+    background-color:white;
+    border: 3px solid blue;
+    border-radius: 8px;
+    background-color: rgba(235, 235, 235, 0.856);
 }
 .containe h1{
    text-align: center;
@@ -23,11 +23,13 @@ background-color: transparent;
 }
 .containe div{
     margin-top: 5px;
+    margin-bottom: 3px;
 
 }
 .containe div label{
-    color: blue;
+    color: rgb(32, 32, 241);
 }
+
 #female{
     margin-left: 10px;
 }
@@ -38,7 +40,16 @@ background-color: transparent;
    
    
 }
+.gender input{
+    width: 30px;
+    
+}
 .btn{
      margin-top: 10px;
 }
-
+.invalid-feedback1{
+    color: red;
+}
+.valid-feedback1{
+    color:  rgb(3, 73, 18);
+}

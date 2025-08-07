@@ -10,34 +10,44 @@
 </head>
 <body>
 <div class="cont">
-    
-        <form action="">
-            <div class="containe" >
+    <div class="container">
+        <form class="form" action="" onsubmit="return validity()" id="verify">
+            <div class="containe">
                 <h1>REGISTER STAFF</h1>
                 <div>
                      <label for="fname" class="form-label" > First Name</label>
-                     <input class ="form-control" id="fname" type="text" placeholder="Enter your name...">
+                     <input class ="form-control" id="fname" type="text"  placeholder="Enter your name..." >
+                     <div id="fname-respons"></div>
+                   
                 </div>
                 <div>
                   <label for="lastname" class="form-label">Last Namme</label>
-                  <input class="form-control " id ="lastname" type="text"  placeholder="Enter your last name...">
+                  <input class="form-control " id ="lastname" type="text"  placeholder="Enter your last name..." >
+                  <div class="invalid-feedback">invalid</div>
+                  <div class="valid-feedback">valided</div>
                 </div>
                 <div>
-                    <label for="date of birth" class="form-label">Date of birth</label>
-                    <input class="form-control" id="date of birth" type="date">
+                    <label for="dateBirth" class="form-label">Date of birth</label>
+                    <input class="form-control" id="dateBirth" type="date" >
+                    <div class="invalid-feedback">invalid</div>
+                    <div class="valid-feedback">valided</div>
                 </div>
                  <div>
-                    <label for="place of birth" class="form-label"> Place Of Birth</label>
-                    <input class="form-control" id="place of birth" type="text" placeholder="Enter your place of birth...">
+                    <label for="placeBirth" class="form-label"> Place Of Birth</label>
+                    <input class="form-control" id="placeBirth" type="text" placeholder="Enter your place of birth...">
+                    <div class="invalid-feedback">invalid</div>
+                    <div class="valid-feedback">valided</div>
                  </div>
                 <div class="gender">  
-                    <label for="" style="color: black;">Gender</label><br>
-                    <label for="male" class="radio-inline"><input type="radio" name="gender" id="male" value="Male">Male</label>
-                    <label for="female" class="radio-inline"><input type="radio" name="gender" id="female" value="female">female</label>
+                    <label for="" >Gender</label><br>
+                    <label style="color: black;" for="male" class="radio-inline"><input type="radio" name="gender" id="male" value="Male" >Male</label>
+                    <label style="color: black;" for="female" class="radio-inline"><input type="radio" name="gender" id="female" value="female" >female</label>
+                    <div class="invalid-feedback">invalid</div>
+                    <div class="valid-feedback">valided</div>
                 </div>
                 <div>
                     <label for="department" class="form-label">Select your Department</label>
-                     <select name="" id="department" class="form-select">
+                     <select name="department" id="department" class="form-select" onchange="handleChange(this)" >
                     <option disabled>Options</option>
                     <option value="printing">printing</option>
                     <option value="finishing">finishing</option>
@@ -49,15 +59,19 @@
                     <option value="canteen">canteen</option> 
                     <option value="accounting">accounting</option>
                     <option value="production of drivers license">production of drivers license</option>
+                    <div class="invalid-feedback">invalid</div>
+                    <div class="valid-feedback">valided</div>
                 </select>
                 </div>
                 <div>
                     <label for="status">Select Status</label class="form-label">
-                     <select name="" id="status" class="form-select">
+                     <select name="" id="status" class="form-select" onchange="handleChange(this)" >
                     <option disabled >select</option>
                     <option value="permenent">permenent</option>
                     <option value="temporal">temporal</option>
                     <option value="intern">intern</option>
+                    <div class="invalid-feedback">invalid</div>
+                    <div class="valid-feedback">valided</div>
                 </select>
                  </div>
                
@@ -71,8 +85,8 @@
          
         </form>
     
-
-   
+    </div>
+    <script src="../javasript/validation.js"></script>
 
 </div>
 </body>
