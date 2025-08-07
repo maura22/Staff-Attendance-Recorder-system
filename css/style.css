@@ -30,9 +30,8 @@ box-shadow: 2px 2px 2px 2px blue;
   background-color: white;
 
 }
-.side li{ 
+.side a div{ 
     margin-top:30px;
-  list-style: none;
   padding: 8px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -41,16 +40,13 @@ border-radius: 8px;
 width: 100%;
   
  }
-.side li a{
+.side a{
   text-decoration: none;
   color: black;
-  padding: 8px;
-  width: 100%;
+  text-align: center;
 }
-.side li a:hover{
-  color: white;
-}
-.side li:hover{
+
+.side a div:hover{
    border: 2px solid white;
    cursor: pointer;
    background-color: blue;
@@ -85,4 +81,9 @@ width: 100%;
  margin: 5px;
 }
 
- 
+.invalid-feedback1{
+  color: red;
+}
+.valid-feedback1{
+  color: rgb(2, 44, 11);
+}

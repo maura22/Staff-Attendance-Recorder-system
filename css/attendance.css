@@ -13,11 +13,11 @@ body form{
     border-radius: 8px;
     margin-left:30%;
     margin-top: -5%;
-    
+    background-color: rgba(235, 235, 235, 0.856);
     padding:15px;
  }
  body div label{
-    color: rgb(86, 86, 248);
+    color: rgb(32, 32, 241);
 }
 #ct{
     display: flex;

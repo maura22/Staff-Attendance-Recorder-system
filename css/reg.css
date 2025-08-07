@@ -15,6 +15,7 @@ body form{
     background-color:white;
     border: 3px solid blue;
     border-radius: 8px;
+    background-color: rgba(235, 235, 235, 0.856);
 }
 .containe h1{
    text-align: center;
@@ -26,7 +27,7 @@ body form{
 
 }
 .containe div label{
-    color: rgb(86, 86, 248);
+    color: rgb(32, 32, 241);
 }
 
 #female{
@@ -46,4 +47,9 @@ body form{
 .btn{
      margin-top: 10px;
 }
-
+.invalid-feedback1{
+    color: red;
+}
+.valid-feedback1{
+    color:  rgb(3, 73, 18);
+}
