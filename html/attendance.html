@@ -6,42 +6,40 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/attendance.css">
   <title>Document</title>
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <script href="../javasript/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="../css/reg.css">
 </head>
 <body>
  
   <div id="cont">
     <div class="container">
       <form action="">
-        <h1>Register Attendance</h1>
+        <div class="hed"><h1>Register Attendance</h1></div>
+        
         <div class="row">
           <div class="col">
-            <label for="fname" class="form-label">First Name</label>
-            <input type="text" id="fname"  class="form-control"   placeholder="Entery your Name...">
+              <select name="department" id="department" class="form-select"  >
+                    <option >select your department</option>
+                    <option value="printing">printing</option>
+                    <option value="finishing">finishing</option>
+                    <option value="maintaining">maintaning</option>
+                    <option value="marketing">marketing</option>
+                    <option value="fabric printing">fabric printing</option>
+                    <option value="screen printing">screen printing</option>
+                    <option value="mounting">mounting</option>
+                    <option value="canteen">canteen</option> 
+                    <option value="accounting">accounting</option>
+                    <option value="production of drivers license">production of drivers license</option>
+                    <div class="invalid-feedback">invalid</div>
+                    <div class="valid-feedback">valided</div>
+                </select>
             
           </div>
           <div class="col">
-            <label for="lastname" class="form-label">Last Name</label>
-            <input type="text" id="lastname" class="form-control" placeholder="Entery your Name...">
-            <div class="invalid-feedback">invalid</div>
-            <div class="valid-feedback">valided</div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <label for="Date" class="form-label">Date</label>
-            <input type="date" class="form-control" id="Date" >
-            <div class="invalid-feedback">invalid</div>
-            <div class="valid-feedback">valided</div>
-
-          </div>
-          <div class="col">
-            <label for="time" class="form-label">Entery Time</label>
-            <input type="time" name="" id="time" class="form-control">
-            <div class="invalid-feedback">invalid</div>
-            <div class="valid-feedback">valided</div>
+              <select name="department" id="department" class="form-select"  >
+                    <option >select your name</option>
+                    <option value="printing">test</option>
+                    <option value="finishing">home</option>
+                 
+                </select>
           </div>
         </div>
         <div class="row">

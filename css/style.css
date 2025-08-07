@@ -1,10 +1,9 @@
 
 
 body{
- background-color: white;
-margin: 0px;
-padding: 0px;
-
+background-color:rgb(221, 218, 218);
+    margin: 0;
+    padding: 0;
 }
 .side{
 margin-top:10px;
@@ -54,7 +53,7 @@ width: 100%;
 }
 #main_display{
   margin-top: 230px;
-  margin-bottom: 38%;
+  margin-bottom: 55%;
  
 }
 

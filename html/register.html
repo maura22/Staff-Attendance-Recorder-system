@@ -13,41 +13,42 @@
     <div class="container">
         <form class="form" action="" onsubmit="return validity()" id="verify">
             <div class="containe">
-                <h1>REGISTER STAFF</h1>
+                <div class="hed"><h1>REGISTER STAFF</h1></div>
+                
                 <div>
                      <label for="fname" class="form-label" > First Name</label>
-                     <input class ="form-control" id="fname" type="text"  placeholder="Enter your name..." >
+                     <input class ="form-control" id="fname" type="text" required placeholder="Enter your name..." >
                      <div id="fname-respons"></div>
                    
                 </div>
                 <div>
-                  <label for="lastname" class="form-label">Last Namme</label>
-                  <input class="form-control " id ="lastname" type="text"  placeholder="Enter your last name..." >
+                  <label for="lastname" class="form-label">Last Name</label>
+                  <input class="form-control " id ="lastname" type="text" required placeholder="Enter your last name..." >
                   <div class="invalid-feedback">invalid</div>
                   <div class="valid-feedback">valided</div>
                 </div>
                 <div>
                     <label for="dateBirth" class="form-label">Date of birth</label>
-                    <input class="form-control" id="dateBirth" type="date" >
+                    <input class="form-control" id="dateBirth" type="date" required >
                     <div class="invalid-feedback">invalid</div>
                     <div class="valid-feedback">valided</div>
                 </div>
                  <div>
                     <label for="placeBirth" class="form-label"> Place Of Birth</label>
-                    <input class="form-control" id="placeBirth" type="text" placeholder="Enter your place of birth...">
+                    <input class="form-control" id="placeBirth" type="text" required placeholder="Enter your place of birth...">
                     <div class="invalid-feedback">invalid</div>
                     <div class="valid-feedback">valided</div>
                  </div>
                 <div class="gender">  
                     <label for="" >Gender</label><br>
-                    <label style="color: black;" for="male" class="radio-inline"><input type="radio" name="gender" id="male" value="Male" >Male</label>
-                    <label style="color: black;" for="female" class="radio-inline"><input type="radio" name="gender" id="female" value="female" >female</label>
+                    <label style="color: black;" for="male" class="radio-inline"><input type="radio" name="gender" id="male" value="Male" required>Male</label>
+                    <label style="color: black;" for="female" class="radio-inline"><input type="radio" name="gender" id="female" value="female" required >female</label>
                     <div class="invalid-feedback">invalid</div>
                     <div class="valid-feedback">valided</div>
                 </div>
                 <div>
                     <label for="department" class="form-label">Select your Department</label>
-                     <select name="department" id="department" class="form-select" onchange="handleChange(this)" >
+                     <select name="department" id="department" class="form-select" required >
                     <option disabled>Options</option>
                     <option value="printing">printing</option>
                     <option value="finishing">finishing</option>
@@ -65,7 +66,7 @@
                 </div>
                 <div>
                     <label for="status">Select Status</label class="form-label">
-                     <select name="" id="status" class="form-select" onchange="handleChange(this)" >
+                     <select name="" id="status" class="form-select" >
                     <option disabled >select</option>
                     <option value="permenent">permenent</option>
                     <option value="temporal">temporal</option>
