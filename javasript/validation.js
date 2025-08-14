@@ -42,7 +42,7 @@ console.log(staffArray);
 alert("Staff sucessfully saved");
 saveData();
 document.getElementById("verify").reset();
-console.log(JSON.parse(localStorage.getItem("staffArray")));
+//console.log(JSON.parse(localStorage.getItem("staffArray")));
 }
 
 
@@ -54,15 +54,18 @@ function getData(){
   const placeOfBirth = document.getElementById('placeBirth').value;
   const selectedGender = document.querySelector('input[name="gender"]:checked').value;
   const status =document.getElementById('status').value;
-  
-  
+ 
+
   staff.fistname = name1;
+  staff.lastName=name2;
   staff.dateOfBirth=dateOfBirth;
+  staff.placeOfBirth=placeOfBirth;
   staff.department = department.value;
   staff.selectedGender=selectedGender;
-  staff.lastName=name2;
+  
   staff.staff_status=status;
   return staff;
+
 }
    
 
@@ -71,6 +74,11 @@ function saveData() {
    localStorage.setItem("staffArray",JSON.stringify(staffArray));
 
 }
+
+
+
+
+
 /*function registerStaff() {
   
   handleChange(selectObj) 

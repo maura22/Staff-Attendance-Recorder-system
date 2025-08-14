@@ -11,12 +11,12 @@
  
   <div id="cont">
     <div class="container">
-      <form action="">
+      <form action=""  >
         <div class="hed"><h1>Register Attendance</h1></div>
         
         <div class="row">
           <div class="col">
-              <select name="department" id="department" class="form-select"  >
+              <select name="department" id="department" class="form-select" onchange="select()" >
                     <option >select your department</option>
                     <option value="printing">printing</option>
                     <option value="finishing">finishing</option>
@@ -34,15 +34,13 @@
             
           </div>
           <div class="col">
-              <select name="department" id="department" class="form-select"  >
+              <select name="department" id="name" class="form-select"  >
                     <option >select your name</option>
-                    <option value="printing">test</option>
-                    <option value="finishing">home</option>
                  
                 </select>
           </div>
         </div>
-        <div class="row">
+        <div class="row" id="area">
           <div class="col">
             <label for="Description" class="form-label">Description</label>
             <textarea name="" id="Description" class="form-control"   placeholder="Descrip your entery.."></textarea>
@@ -51,7 +49,7 @@
         </div>
         <div id="ct">
           <input type="reset" value="clear"  class="btn btn-dark">
-          <input type="submit" value="submit" class="btn btn-primary">
+          <input type="submit" value="submit" class="btn btn-primary" id="attendance" onclick="atteensance()">
         
          </div>
       </div>
@@ -60,7 +58,14 @@
       </form>
     
   </div>
+<script>
+ document.getElementById("atteensance").addEventListener("submit",function (e){
+   e.preventDefault();
+  this.reset();
 
+  });
+</script>
+<script src="../javasript/display.js"></script>
   
 </body>
 </html>

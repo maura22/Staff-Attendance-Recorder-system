@@ -32,6 +32,10 @@ body form{
     background-color: white;
     padding:15px;
  }
+ #area{
+    margin-top: 5px;
+    padding-top: 10px;
+ }
  body div label{
     color: rgb(32, 32, 241);
 }

@@ -23,17 +23,46 @@ $(document).ready(function($)
     });
 }); */
 
-function loadpage(page){
- 
-    fetch(page).then(res=>{
-        if(res.ok){
-            console.log(res.text);
-            return res.text();
-        } else{
-            console.log('erro fetching page')
+async function loadpage(pageUrl) {
+    const res = await fetch(pageUrl);
+    const html = await res.text();
+    document.getElementById('main_display').innerHTML = html;
+  
+    if (pageUrl === 'home.html') {
+      var value = document.getElementById('staffTable');
+      console.log(JSON.parse(localStorage.getItem('staffArray')));
+      const storedData = localStorage.getItem('staff');
+      const staff = JSON.parse(localStorage.getItem('staffArray'));
+      const display = document.getElementById('staffTable');
+      staff.forEach((staff) => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+        <td>${staff.fistname}</td>
+         <td>${staff.lastName}</td>
+          <td>${staff.dateOfBirth}</td> 
+          <td>${staff.placeOfBirth}</td>
+           <td>${staff.selectedGender}</td>
+        <td>${staff.department}</td>
+        <td>${staff.staff_status}</td>
+      `;
+        value.appendChild(row);
+      });
+    }
+  }
+  
+  function Loadpage(page) {
+    fetch(page)
+      .then((res) => {
+        if (res.ok) {
+          console.log(res.text);
+          return res.text();
+        } else {
+          console.log('erro fetching page');
         }
-    }).then(data =>{
-        console.log(data);
-        document.getElementById('main_display').innerHTML =data;
-    });
-}
+      })
+      .then((data) => {
+        document.getElementById('main_display').innerHTML = data;
+      });
+  }
+  
+

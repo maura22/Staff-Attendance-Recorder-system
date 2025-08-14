@@ -3,114 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-   <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-    
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/attend.css">
 </head>
-<body id="body">
-   <header>
-  <nav class="navbar navbar-expand  shadow fixed-top ">
-          <div class="container">
-                <img title="STAFF Attendance SYSTEM" src="../resource/logo/logo1.png" alt="Logo" style="width:100px;" class="nav-link">
-                <ul class="navbar-nav">
-                   <li class="nav-item">
-                       <h1 ><strong>WORK FORCE MANAGEMENT SYSTEM</strong></h1>
-                  </li>
-                </ul> 
-                <ul class="navbar-nav">
-               <div class="clock">
-                  <span id="h"></span>
-                  :<span  id="m"></span>
-                  :<span id="s"></span> 
-              </div>
-                </ul> 
-            
-        </div>
-      </nav>
-   </header>
-
-   <div id="main_display" class="screen" >
- 
-   </div>
-    <div class=" side" >
-      <div class="container-ms">
-           <a href="#"  onclick="loadpage('home.html')">
-               <div>
-                  <span class="icon">
-                     <i class="bi bi-house-fill"></i>
-                  </span>
-                  <span class="description">Home</span>
-                
-                </div>
-            </a>
-            <a href="#"  onclick="loadpage('register.html')">
-              <div>
-                  <span class="icon">
-                   <i class="bi bi-person"></i>
-                 </span>
-                <span class="description"> Register staff</span>
-              </div>
-            </a>
-            
-             <a href="#"  onclick="loadpage('Attendance.html')">
-              <div>
-                <span class="icon">
-                    <i class="bi bi-journal-text"></i>
-                </span>
-                <span class="description">Register Attendance</span>
-              </div>
-            </a>
-            
-           <a href="#"  onclick="loadpage('display.html')">
-             <div>
-                <span class="icon">
-                    <i class="bi bi-list-columns-reverse"></i>
-                </span>
-                <span class="description"> Display staff Attendance  </span>
-              </div>
-            </a>
-            
-          
-        </div>
-        
-        
-
-     </div>
+<body id="bodyy">
+  <div class="container">
+    <div class="container-ms">
+        <table class="table table-hover table-bordered table-striped text-center align-middle" >
+         
+         <thead class="">
+         
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Date of Birth</th>
+            <th>Place of Birth</th>
+            <th>Gender</th>
+          <th>Department</th>
+          <th>Status</th>
+        </tr>
+       </thead>
+       <tbody  id="staffTable">
+         
+        </tbody>
+        </table>
     
-  <footer>
-    <div class="footer" style="background-color: white;">
-      <div style="background-color: white;">
-        <marquee behavior="" direction="">INFORMATION BANNER</marquee>
-        &copy; WORK FORCE MANAGEMENT SYSTEM
-      </div>
     </div>
-  </footer>
-    
-      
-
-
-
-<script src="../javasript/home.js"></script><!--<script href="../javasript/bootstrap.min.js"></script>-->
-<script src="../javasript/validation.js"></script>
-<script>
- let hrs=document.getElementById("h")
- let min=document.getElementById("m") 
- let sec=document.getElementById("s")
-
- setInterval(() => {
-
-  let currentTime = new Date();
-
-  hrs.innerHTML=(currentTime.getHours() < 10 ? "0" : "")+currentTime.getHours();
-
-  min.innerHTML=(currentTime.getMinutes() < 10 ? "0" : "")+ currentTime.getMinutes();
-
-  sec.innerHTML=(currentTime.getSeconds() < 10 ? "0" : "")+ currentTime.getSeconds();
-
- },1000);
-</script>
-
+  </div>
+  <script></script>
+  <script>
+  </script>
 </body>
 </html>

@@ -16,7 +16,7 @@
                 <div class="hed"><h1>REGISTER STAFF</h1></div>
                 
                 <div>
-                     <label for="fname" class="form-label" > First Name</label>
+                     <label for="fname" class="form-label" id="label"> First Name</label>
                      <input class ="form-control" id="fname" type="text" required placeholder="Enter your name..." >
                      <div id="fname-respons"></div>
                    
@@ -47,9 +47,9 @@
                     <div class="valid-feedback">valided</div>
                 </div>
                 <div>
-                    <label for="department" class="form-label">Select your Department</label>
+                    
                      <select name="department" id="department" class="form-select" required >
-                    <option disabled>Options</option>
+                    <option >Select your Department</option>
                     <option value="printing">printing</option>
                     <option value="finishing">finishing</option>
                     <option value="maintaining">maintaning</option>
@@ -65,9 +65,9 @@
                 </select>
                 </div>
                 <div>
-                    <label for="status">Select Status</label class="form-label">
+                   
                      <select name="" id="status" class="form-select" >
-                    <option disabled >select</option>
+                    <option  >Select Status</option>
                     <option value="permenent">permenent</option>
                     <option value="temporal">temporal</option>
                     <option value="intern">intern</option>
@@ -88,6 +88,7 @@
     
     </div>
     <script src="../javasript/validation.js"></script>
+    <script src="../javasript/display.js"></script>
 
 </div>
 </body>
